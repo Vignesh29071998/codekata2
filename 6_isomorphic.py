@@ -1,15 +1,12 @@
-#hello
-from collections import Counter
+d={}
 l1,l2=input().split()
-a=Counter(l1)
-b=Counter(l2)
-a1,a2=[],[]
-for i in a:
-    a1.append(a[i])
-for j in b:
-    a2.append(b[j])
-if a1==a2:
-    print('yes')
+for i in range(0,len(l1)):
+    if l1[i] not in d.keys():
+        d[l1[i]]=l2[i]
+    else:
+        if d[l1[i]]!=l2[i]:
+            print('no')
+            break
 else:
-    print('no')
+    print('yes')
 
