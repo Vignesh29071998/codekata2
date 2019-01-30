@@ -5,5 +5,5 @@ for i in a:
     b[i]=1
   else:
     b[i]+=1
-print(max(b))
+print(max(b,key=b.get))
 
