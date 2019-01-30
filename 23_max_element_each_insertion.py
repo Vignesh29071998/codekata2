@@ -1,5 +1,5 @@
-#hello
 n,k=map(int,input().split())
+input()
 n1=list(map(int,input().split()))
 k1=list(map(int,input().split()))
 k2=[]
@@ -11,3 +11,4 @@ for i in range(0,len(k2)):
     print(k2[i])
   else:
     print(k2[i],end=' ')
+
