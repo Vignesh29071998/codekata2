@@ -9,7 +9,17 @@ for i in li:
      s+=ord(li[m][j])
   m+=1
   d[i]=s
-print(sorted(d,key=d.get))
+li1=sorted(d,key=d.get)
+for i in range(0,len(li1)):
+  if i==len(li1)-1:
+    print(li1[i])
+  else:
+    print(li1[i],end=' ')
+
+  
+
+  
+  
 
   
 
