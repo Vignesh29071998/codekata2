@@ -6,5 +6,5 @@ for i in n1:
     d[i]=1
   else:
     d[i]+=1
-c=min(d,key=d.get)
-print(d[c])
+print(min(d,key=d.get))
+
