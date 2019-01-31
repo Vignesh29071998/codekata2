@@ -1,20 +1,16 @@
 n=int(input())
-d={}
-li=input().split()
+li=list(input().split())
 a=[]
-m=0
-for i in li:
-  s=0
-  for j in range(0,len(i)):
-     s+=ord(li[m][j])
-  m+=1
-  d[i]=s
-li1=sorted(d,key=d.get)
-for i in range(0,len(li1)):
-  if i==len(li1)-1:
-    print(li1[i])
-  else:
-    print(li1[i],end=' ')
+i=0
+for i in range(len(li)):
+    for j in range(0,len(li)-i-1):
+        if len(li[j])>len(li[j+1]):
+            li[j],li[j+1]=li[j+1],li[j]
+for i in range(len(li)-1):
+    if len(li[i])==len(li[i+1]) and li[i]>li[i+1]:
+        li[i],li[i+1]=li[i+1],li[i]
+print(*li)
+
 
   
 
