@@ -5,7 +5,7 @@ for i in s:
     d[i]=1
   else:
     d[i]+=1
- if d['(']==d[')']:
+if d['(']==d[')']:
   print('yes')
 else:
   print('no')
