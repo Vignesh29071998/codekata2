@@ -1,3 +1,4 @@
+#hello
 s=input()
 d={}
 for i in s:
@@ -5,8 +6,11 @@ for i in s:
     d[i]=1
   else:
     d[i]+=1
-if d['(']==d[')']:
-  print('yes')
-else:
+try:
+  if d['(']==d[')']:
+    print('yes')
+  else:
+    print('no')
+except KeyError:
   print('no')
     
